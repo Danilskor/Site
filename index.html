@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sites.google.com/view/danilskor/style-css">
+    <title>Document</title>
+    <Script src="" type="js"></Script>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="title" >
+            <button class="dom" onclick="printTree()">Дерево элементов страницы</button>
+            <a href="Отчет4.pdf"><button class="doc">Отчет</button></a>
+        </div>
+        <form action="" id="formWithValidation">
+            <div class="form">
+                <p class="label">Фамилия:</p>
+                <input type="text" id="name" class="input" placeholder="Фамилия">
 
+                <p class="label">Имя:</p>
+                <input type="text" id="surname" class="input" placeholder="Имя">
+
+                <p class="label">Отчество:</p>
+                <input type="text" id="patronymic" class="input" placeholder="Отчество">
+
+                <p class="label">Пол:</p>
+                <div class="gender">
+                    <div class="male">
+                        <P>Мужской</P>
+                        <input type="checkbox" id="male" class="input" placeholder="пол">
+                    </div>
+                    <div class="female">
+                        <P>Женский</P>
+                        <input type="checkbox" id="female" class="input" placeholder="пол">
+                    </div>                
+                </div>
+
+                <p class="label">Дата рождения:</p>
+                <input type="date" id="dataBrith" class="input" placeholder="Дата рождения">
+
+                <p class="label">Телефон:</p>
+                <input type="tel" id="phone" class="input" placeholder="Телефон">
+
+                <p class="label">Логин на сайте:</p>
+                <input type="text" id="login" class="input" placeholder="Логин на сайте">
+
+                <p class="label">Электронная почта:</p>
+                <input type="email" id="email" class="input" placeholder="Электронная почта">
+
+                <p class="label">Пароль:</p>
+                <input type="password" id="password" class="input" placeholder="Пароль">
+
+                <p class="label">Подтверждение пароля:</p>
+                <input type="password" id="confirmationPassword" class="input" placeholder="Подтверждение пароля">
+                </div>            
+            </div>
+            <div class="submit">
+                <button type="submit" id="validateBtn">Отправить</button>
+            </div>
+
+        </form>
+    </header>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <script type="text/javascript" src="js/printTree.js"></script>
+</body>
+</html>
